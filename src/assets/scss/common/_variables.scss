@@ -1,0 +1,89 @@
+/* ==========
+Define Font family
+ ========== */
+$font-family: 'Superteams-font', sans-serif;
+
+/* ==========
+  Define Font Size
+   ========== */
+$base-font-size: 16;
+$base-font-size-mobile: 13;
+$heading1-font-size: 36;
+$heading2-font-size: 22;
+$heading3-font-size: 18;
+
+$heading1-mobile-font-size: 24;
+$heading2-mobile-font-size: 20;
+$heading3-mobile-font-size: 18;
+$heading4-mobile-font-size: 14;
+
+$heading1-tablet-font-size: 28;
+$heading2-tablet-font-size: 20;
+$heading3-tablet-font-size: 18;
+$heading4-tablet-font-size: 14;
+
+/* ==========
+ Define font weight
+   ========== */
+$bold-font-weight: 600;
+$medium-font-weight: 500;
+$normal-font-weight: 400;
+$light-font-weight: 300;
+$base-border-radius: 4px;
+
+/* ==========
+ Define colours
+   ========== */
+$white-color: #ffffff;
+$theme-border-color: #dadce0;
+$theme-button-primary-color: #1a73e8;
+$theme-primary-color: #423f3f;
+$theme-secondary-color: #9d9d9d;
+$theme-font-body-color: #3c4043;
+$theme-font-heading-primary-color: #02052b;
+$theme-font-heading-secondary-color: #202124;
+$black-color: #000000;
+$body-background-color: #fdfeff;
+$sky-blue-color: #e8f0fe;
+$red-color: #ea4335;
+$theme-font-terciary-color: #5f6368;
+$theme-blue-color: #01579b;
+$theme-blue-primary-color: #276ef1;
+$theme-grey-color: #707070;
+$table-border-color: #f7f7f7;
+$theme-semi-white-color: #f7fbff;
+$theme-font-primary-color: #5f6368;
+
+// $theme-main-text-color:#0967ac;
+// $theme-main-text-color:#3a8efc;
+$theme-main-text-color:#3f83f0;
+// $theme-main-text-color:#0196b4;
+$theme-main-text-active-color:#7fd1de;
+
+$gray-color:#ccc;
+$gray-color-primary: #dadce0;
+$gray-color-secondary: #fafafa;
+
+
+/* ==========
+  Define the breakpoints at which your layout will change,
+   adapting to different screen sizes.
+  ==========  */
+$extra-large-min: 1904;
+
+$large-devices-max: ($extra-large-min - 0.02);
+$large-devices-min: 1200;
+
+$medium-devices-max: ($large-devices-min - 0.02);
+$medium-devices-min: 992;
+
+$tablet-devices-max: ($medium-devices-min - 0.02);
+$tablet-devices-min: 768;
+
+$mobile-devices-max-width: $tablet-devices-min - 0.02;
+$small-mobile-devices-width: 480;
+$iphone-devices-max-width: 360;
+
+// Header Height (Needed for layout calculations)
+$desktop-header-height: 66px;
+$mobile-header-height: 50px;

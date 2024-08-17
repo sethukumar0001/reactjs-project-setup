@@ -1,0 +1,68 @@
+@mixin transform($value) {
+  transform: $value;
+  -webkit-transform: $value;
+  -moz-transform: $value;
+  -o-transform: $value;
+  -ms-transform: $value;
+}
+
+@mixin transition($value) {
+  transition: all $value ease-in-out;
+  -webkit-transition: all $value ease-in-out;
+  -moz-transition: all $value ease-in-out;
+  -ms-transition: all $value ease-in-out;
+  -o-transition: all $value ease-in-out;
+}
+
+@mixin boxShadow($boxArea, $color) {
+  box-shadow: $boxArea $color;
+  -webkit-box-shadow: $boxArea $color;
+}
+
+@mixin genearteRemFontSize($size) {
+  font-size: ($size / $base-font-size) + rem;
+}
+
+// Media Queries to use the same eg
+// @include tablet { **CSS Properties Here** }
+@mixin mobile {
+  @media (max-width: #{$mobile-devices-max-width + px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-devices-min + px}) and (max-width: #{$tablet-devices-max + px}) {
+    @content;
+  }
+}
+
+@mixin tabletAndBelow {
+  @media (max-width: #{$tablet-devices-max + px}) {
+    @content;
+  }
+}
+
+@mixin mediumDevices {
+  @media (min-width: #{$medium-devices-min + px}) and (max-width: #{$medium-devices-max + px}) {
+    @content;
+  }
+}
+
+@mixin mediumDevicesAndBelow {
+  @media (max-width: #{$medium-devices-max + px}) {
+    @content;
+  }
+}
+
+@mixin largeDevicesAndAbove {
+  @media (min-width: #{$large-devices-min + px}) {
+    @content;
+  }
+}
+
+@mixin tabletAndAbove {
+  @media (min-width: #{$tablet-devices-min + px}) {
+    @content;
+  }
+}

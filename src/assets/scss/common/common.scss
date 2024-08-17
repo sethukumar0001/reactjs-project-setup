@@ -1,0 +1,107 @@
+@import "extends.scss";
+@import "variables.scss";
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+.header_image {
+  height: 50px;
+  width: 50px;
+}
+
+body {
+  overflow: hidden;
+}
+
+.logo_image {
+  height: 100px;
+  width: 100px;
+}
+.img-responsive {
+  height: 40px;
+  width: 180px;
+}
+
+.filter-image-container {
+  @extend %transition;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  .filter-image {
+    height: 28px;
+    width: 28px;
+  }
+  // &:hover {
+  //   background-color: #edf4ff;
+  // }
+}
+
+//---------------------- border styles -------------------//
+
+.vertical_line {
+  border-left: 1px solid #dadce0;
+  margin-left: 10px;
+  height: auto;
+}
+.horizontal_line {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #dadce0;
+}
+
+.common_height_width {
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+}
+
+.template_button_container {
+  background-color: $theme-blue-primary-color;
+  padding: 5px;
+  border-radius: 5px;
+  p {
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+  }
+}
+
+.border__dashed {
+  border: 2px dashed #dadce0;
+}
+
+.word__break {
+  word-wrap: break-word;
+}
+.position-relative {
+  position: relative !important;
+}
+.border_bottom {
+  border-bottom: 1px solid $theme-border-color;
+}
+.border_top {
+  border-top: 1px solid $theme-border-color;
+}
+
+.profile_circle {
+  background-color: #2d5743;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-right: 10px;
+  .title {
+    color: white;
+    font-size: 14px;
+  }
+}
+
+.active-icon {
+  width: 7.5px;
+  height: 7px;
+  border-radius: 50%;
+}

@@ -1,0 +1,99 @@
+.common_image {
+  height: 18px;
+  width: 18px;
+}
+
+.common_image_blue {
+  height: 20px !important;
+  width: 20px !important;
+  fill: #1a73e8;
+  margin-left: 6px;
+}
+.email_icon {
+  height: 80px;
+  width: 80px;
+  fill: rgb(62, 62, 62);
+}
+
+.dropdown_close_container {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 500ms ease;
+  .dropdown_close_image {
+    height: 18px;
+    width: 18px;
+    text-align: center;
+  }
+  &:hover {
+    fill: #1d1d1d;
+    background-color: rgb(143, 175, 231);
+    border-radius: 50%;
+  }
+}
+
+.image_container {
+  height: 28px;
+  width: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 500ms ease;
+  cursor: pointer;
+  .image {
+    height: 24px;
+    width: 24px;
+    text-align: center;
+  }
+  &:hover {
+    fill: #1a73e8;
+    background-color: rgb(219, 229, 246);
+    border-radius: 50%;
+  }
+}
+
+.image_container_noeffects {
+  height: 28px;
+  width: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 500ms ease;
+  cursor: pointer;
+  .image {
+    height: 24px;
+    width: 24px;
+    text-align: center;
+    fill: #5a5a5a;
+  }
+  &:hover {
+    // fill: #1a73e8;
+    // background-color: rgb(219, 229, 246);
+    // border-radius: 50%;
+  }
+}
+
+.delete_image_container {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 100ms ease;
+  cursor: pointer;
+  .delete_image {
+    // height: 12px;
+    // width: 12px;
+  }
+  &:hover {
+    // background-color: #eea8ad !important;
+    background-color: #eccbcd !important;
+    fill: #d7242e;
+  }
+}
